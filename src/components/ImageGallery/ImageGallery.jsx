@@ -1,10 +1,10 @@
 import { ImageList } from './ImageGallery.styled';
 import ImageGalleryItem from 'components/ImageGalleryItem/ImageGalleryItem';
 
-function ImageCallery({ images }) {
+function ImageCallery({ images, openModal }) {
   return (
     <ImageList>
-      <ImageGalleryItem items={images} />
+      <ImageGalleryItem items={images} openModal={openModal} />
     </ImageList>
   );
 }
